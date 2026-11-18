@@ -14,7 +14,7 @@ const demo = new URLSearchParams(window.location.search).get("demo") === "1";
 const demoTrack = {
   source: "youtube_music",
   title: "Midnight Circuit",
-  artist: "Hot Coffee Radio",
+  artist: "Overlay Music Demo",
   artworkUrl: "",
   durationMs: 214000,
   progressMs: 82000,
