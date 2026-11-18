@@ -5,7 +5,8 @@
   "description": "Local-first music now-playing overlay for OBS",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server.mjs",
+    "test": "node scripts/smoke-test.mjs"
   },
   "engines": {
     "node": ">=18"
