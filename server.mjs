@@ -220,7 +220,7 @@ async function main() {
 
   server.listen(PORT, HOST, () => {
     console.log("");
-    console.log("Hot Coffee Music Bridge listo.");
+    console.log("Overlay Music Bridge listo.");
     console.log("Overlay de OBS: http://" + HOST + ":" + PORT + "/overlay");
     console.log("Vista de prueba: http://" + HOST + ":" + PORT + "/overlay?demo=1");
     console.log("Token para la extensión (guárdalo en sus opciones):");
