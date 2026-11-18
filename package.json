@@ -1,0 +1,13 @@
+{
+  "name": "overlay-music",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first music now-playing overlay for OBS",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
