@@ -41,7 +41,7 @@ const baseUrl = `http://127.0.0.1:${port}`;
 async function waitForServer() {
   for (let attempt = 0; attempt < 40; attempt += 1) {
     if (child.exitCode !== null) {
-      throw new Error("El puente terminó antes de responder:\\n" + output);
+      throw new Error("El puente terminó antes de responder:\n" + output);
     }
     try {
       const response = await fetch(baseUrl + "/api/now-playing");
@@ -51,7 +51,7 @@ async function waitForServer() {
     }
     await delay(100);
   }
-  throw new Error("El puente no respondió a tiempo:\\n" + output);
+  throw new Error("El puente no respondió a tiempo:\n" + output);
 }
 
 try {
