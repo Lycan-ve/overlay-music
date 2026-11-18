@@ -6,7 +6,7 @@
 
   function readText(...selectors) {
     for (const selector of selectors) {
-      const value = document.querySelector(selector)?.textContent?.replace(/\\s+/g, " ").trim();
+      const value = document.querySelector(selector)?.textContent?.replace(/\s+/g, " ").trim();
       if (value) return value;
     }
     return "";
@@ -25,7 +25,7 @@
     if (artwork.length === 0) return "";
     const best = artwork.sort((a, b) => {
       const size = (entry) => {
-        const match = String(entry.sizes || "").match(/(\\d+)x(\\d+)/);
+        const match = String(entry.sizes || "").match(/(\d+)x(\d+)/);
         return match ? Number(match[1]) * Number(match[2]) : 0;
       };
       return size(b) - size(a);
@@ -55,7 +55,7 @@
             "h1.title",
             "meta[name='title']"
           )) ||
-      document.title.replace(/\\s+-\\s+YouTube(?: Music)?$/i, "").trim();
+      document.title.replace(/\s+-\s+YouTube(?: Music)?$/i, "").trim();
 
     if (!title || /^(YouTube|YouTube Music)$/i.test(title)) return null;
 
