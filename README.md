@@ -58,6 +58,16 @@ http://127.0.0.1:4317/overlay?demo=1
 
 Keep the terminal process running while the overlay is in use. Stop it with `Ctrl+C`.
 
+## Run the smoke test
+
+With Node.js 18 or newer, run:
+
+```bash
+npm test
+```
+
+The smoke test starts the local bridge on a temporary port and checks the overlay assets, authentication, playback-state update, state retrieval, CORS preflight and source validation. It does not need OBS or a YouTube login.
+
 ## Spotify compatibility
 
 Spotify's current Developer Policy prohibits building products integrated with streams or content from another service and prohibits non-interactive internet webcasting use cases. An OBS stream overlay is exactly the kind of use that needs careful policy review. For that reason, this version does **not** connect to Spotify's API or scrape the Spotify desktop/web player, and does not claim that such use is permitted.
